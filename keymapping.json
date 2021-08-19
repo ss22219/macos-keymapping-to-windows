@@ -314,6 +314,36 @@
                 "left_alt"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "com.apple.finder"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "TaskManager",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "delete_forward",
+            "modifiers": {
+              "mandatory": [
+                "left_gui",
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open '/System/Applications/Utilities/Activity Monitor.app/'"
+            }
           ]
         }
       ]
