@@ -347,6 +347,39 @@
           ]
         }
       ]
+    },
+    {
+      "description": "RiderReplace",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "H",
+            "modifiers": {
+              "mandatory": [
+                "left_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "repeat": false,
+              "key_code": "h",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.jetbrains.rider"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
